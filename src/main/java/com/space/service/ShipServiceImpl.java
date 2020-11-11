@@ -1,6 +1,5 @@
 package com.space.service;
 
-import com.space.controller.ShipValidator;
 import com.space.model.Ship;
 import com.space.model.ShipDto;
 import com.space.repository.ShipRepository;
@@ -15,8 +14,6 @@ public class ShipServiceImpl implements ShipService {
 
     @Autowired
     private ShipRepository shipRepository;
-    @Autowired
-    private ShipValidator shipValidator;
 
     @Override
     @Transactional
